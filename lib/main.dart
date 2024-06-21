@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app_tut/screens/home_screen.dart';
+import 'package:news_app_tut/screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }
-
-//let's start by setting up our project structure
-// first let's add a dependecy
-//now let's add the folder and the files that we will need
-//let's run our app

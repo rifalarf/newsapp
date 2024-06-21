@@ -1,0 +1,1 @@
+ /home/user/newsapp-ui-flutter/.dart_tool/flutter_build/8cd6051581f423772f2fa4f56d625010/native_assets.yaml: 
