@@ -1,5 +1,3 @@
-//while the app is building let's create the NewsData class
-
 class NewsData {
   String? title;
   String? author;
@@ -7,7 +5,7 @@ class NewsData {
   String? urlToImage;
   String? date;
 
-  //let's create the constructor
+  // Constructor
   NewsData(
     this.title,
     this.author,
@@ -16,53 +14,52 @@ class NewsData {
     this.urlToImage,
   );
 
-  //we will use dummy data to generate the news,but you can use a third party api or your own backend to extract the data
-  //I will copy the data from my previous code, you can create your own data , I used newsApi to get the data
+  // Dummy data with Indonesian news
   static List<NewsData> breakingNewsData = [
     NewsData(
-        "U.S. Gas Prices Fall Below \$4 a Gallon, AAA Says - The New York Times",
-        "Isabella Simonetti",
-        "After peaking in June, they are back where they were in March, offering some relief to consumers and policymakers amid inflation worries.",
-        "2022-08-11",
-        "https://nypost.com/wp-content/uploads/sites/2/2022/08/twitter-election-misinformation-99.jpg?quality=75&strip=all&w=1024"),
+        "Harga BBM Naik, Pemerintah Jamin Ketersediaan Pasokan",
+        "Dwi Cahyono",
+        "Pemerintah memastikan ketersediaan pasokan BBM tetap aman meskipun harga mengalami kenaikan. Langkah ini diambil untuk menjamin kestabilan pasokan dan menghindari kepanikan di masyarakat.",
+        "2023-06-20",
+        "https://example.com/image1.jpg"),
     NewsData(
-        "BYD Is Taking Electric Vehicles To The World!",
-        "Remeredzai Joseph Kuhudzai",
-        "There was quite a bit of drama on several forums following reports in various media platforms around the world that BYD has overtaken Telsa to become the top-selling EV company. In fact, there was quite a bit of an uproar from some circles that felt that it w…",
-        "2022-08-11",
-        "https://cleantechnica.com/files/2022/05/BYD-Atto-3.jpeg"),
+        "Gempa Bumi Guncang Jawa Barat, Warga Berhamburan Keluar Rumah",
+        "Sinta Ayu",
+        "Gempa bumi berkekuatan 5,6 skala Richter mengguncang wilayah Jawa Barat. Warga yang panik segera berhamburan keluar rumah untuk mencari tempat aman.",
+        "2023-06-21",
+        "https://example.com/image2.jpg"),
     NewsData(
-        "Unexpected storms diverted 100 American Airlines flights and sparked hundreds of cancellations",
-        "Marnie Hunter",
-        "Severe thunderstorms around Dallas-Fort Worth International Airport on Wednesday caused 100 American Airlines flight diversions and led to hundreds of cancellations that extended into Thursday's schedule.",
-        "2022-08-11",
-        "https://cdn.cnn.com/cnnnext/dam/assets/220811123809-dfw-american-airlines-file-restricted-super-tease.jpg"),
+        "Presiden Resmikan Proyek Kereta Cepat Jakarta-Bandung",
+        "Ahmad Faiz",
+        "Presiden meresmikan proyek kereta cepat yang menghubungkan Jakarta dan Bandung. Proyek ini diharapkan dapat mengurangi waktu tempuh antara kedua kota menjadi kurang dari satu jam.",
+        "2023-06-22",
+        "https://example.com/image3.jpg"),
   ];
 
   static List<NewsData> recentNewsData = [
     NewsData(
-        "Teens have abandoned Facebook, Pew study says",
-        "Amanda Silberling",
-        "Gen Z internet use is on the rise, but the rate at which teens use Facebook is rapidly declining. A Pew Research Center study on teens, technology and social media found that only 32% of teens aged",
-        "2022-08-11",
-        "https://techcrunch.com/wp-content/uploads/2022/08/fb-exit-2022.jpg?w=711"),
+        "Perubahan Iklim Mengancam Produksi Padi Nasional",
+        "Budi Santoso",
+        "Dampak perubahan iklim semakin dirasakan oleh petani padi di berbagai daerah. Produksi padi nasional terancam menurun jika tidak ada upaya adaptasi yang cepat dan tepat.",
+        "2023-06-20",
+        "https://example.com/image4.jpg"),
     NewsData(
-        "Fox-owned Tubi expands its free streaming service to five Latin American countries",
-        "Lauren Forristal",
-        "Tubi, the free ad-supported streaming service owned by Fox, is now available in Costa Rica, Ecuador, El Salvador, Guatemala, and Panama — an expansion that has doubled its global footprint and signals the company's interest in capturing more Latin American",
-        "2022-08-11",
-        "https://techcrunch.com/wp-content/uploads/2022/05/cross-device_wave.png?w=711"),
+        "Festival Film Indonesia 2023: Daftar Pemenang",
+        "Rina Wulandari",
+        "Festival Film Indonesia 2023 telah selesai digelar. Berikut adalah daftar pemenang yang berhasil meraih penghargaan di berbagai kategori.",
+        "2023-06-21",
+        "https://example.com/image5.jpg"),
     NewsData(
-        "Massive iron batteries could be key to displacing natural gas from the grid",
-        "Tim De Chant",
-        "VoltStorage recently raised a Series C worth \$24 million from engine manufacturer Cummins. Its previous rounds included investments from SOSV and EIT InnoEnergy.",
-        "2022-08-11",
-        "https://techcrunch.com/wp-content/uploads/2022/08/electrical-grid-at-night.jpg?w=600"),
+        "Startup Teknologi Indonesia Mendapatkan Pendanaan 10 Juta Dolar",
+        "Agus Widodo",
+        "Sebuah startup teknologi asal Indonesia berhasil mendapatkan pendanaan sebesar 10 juta dolar dari investor internasional. Dana tersebut akan digunakan untuk ekspansi dan pengembangan produk.",
+        "2023-06-22",
+        "https://example.com/image6.jpg"),
     NewsData(
-        "Mark Cuban, Mavericks in hot water over Voyager \"Ponzi scheme\"",
-        "Anita Ramaswamy",
-        "The class-action lawsuit alleges that Cuban's promotion of now-bankrupt crypto firm Voyager cost investors \$5 billion",
-        "2022-08-11",
-        "https://techcrunch.com/wp-content/uploads/2016/02/54816c7904ab43c9af6a09d12d936b0e.jpg?w=600"),
+        "Kebijakan Baru Pendidikan: Kurikulum Berbasis Digital",
+        "Maria Lestari",
+        "Pemerintah meluncurkan kebijakan baru dalam pendidikan dengan memperkenalkan kurikulum berbasis digital. Kebijakan ini diharapkan dapat meningkatkan kualitas pendidikan di era digital.",
+        "2023-06-23",
+        "https://example.com/image7.jpg"),
   ];
 }

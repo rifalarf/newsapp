@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
         elevation: 0.0,
         backgroundColor: Colors.transparent,
         title: Text(
-          "NewsApp",
+          "SatuBerita",
           style: TextStyle(color: Colors.black),
         ),
         actions: [
@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Breaking News",
+                "Berita Terbaru",
                 style: TextStyle(
                   fontSize: 26.0,
                   fontWeight: FontWeight.bold,
@@ -66,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 40.0,
               ),
               Text(
-                "Recent News",
+                "Berita Terkini",
                 style: TextStyle(
                   fontSize: 26,
                   fontWeight: FontWeight.bold,
@@ -91,15 +91,15 @@ class _HomeScreenState extends State<HomeScreen> {
         // let's make our button nav bar float
         margin: EdgeInsets.all(12),
         decoration: BoxDecoration(
-          color: Colors.black,
+          color: Color.fromARGB(255, 57, 90, 121),
           borderRadius: BorderRadius.circular(16),
         ),
         child: BottomNavigationBar(
           elevation: 0.0,
-          selectedItemColor: Colors.orange.shade900,
+          selectedItemColor: Colors.white,
           items: [
             BottomNavigationBarItem(
-              backgroundColor: Colors.transparent,
+              backgroundColor: const Color.fromARGB(0, 238, 135, 135),
               icon: Icon(Icons.home),
               label: "Home",
             ),
